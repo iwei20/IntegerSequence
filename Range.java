@@ -1,7 +1,9 @@
+import java.security.InvalidParameterException;
 import java.util.NoSuchElementException;
 public class Range implements IntegerSequence{
     private int start,end,current;
     public Range(int start, int end){
+        if(start > end) throw new IllegalArgumentException("start should be less than or equal to end");
         this.start = start;
         current = start;
         this.end = end;
