@@ -9,6 +9,7 @@ public class Tester {
         }
         System.out.println();
 
+        System.out.println(new Range(0,0).hasNext() ? 1 : 0 == new Range(0,0).next() + 1);
         IntegerSequence factors = new Range(1, 10);
         int product = 1;
         int exceptionCounter = 0;
