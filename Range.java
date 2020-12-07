@@ -19,7 +19,7 @@ public class Range implements IntegerSequence{
 
     //@throws NoSuchElementException
     public int next(){    
-        if(current > end) throw new NoSuchElementException("End of range");
+        if(!hasNext()) throw new NoSuchElementException("End of range");
         return current++;
     }
   
