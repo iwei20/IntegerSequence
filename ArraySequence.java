@@ -26,6 +26,7 @@ public class ArraySequence implements IntegerSequence{
     }
 
     public int next() {
+        if(!hasNext()) throw new NoSuchElementException("End of sequence");
         return data[currentIndex++];
     }
 
