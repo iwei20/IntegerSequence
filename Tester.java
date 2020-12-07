@@ -21,5 +21,14 @@ public class Tester {
             }
         }
         System.out.println("You raised " + exceptionCounter + " exceptions and your product is " + product);
+    
+        IntegerSequence nr = new Range(10,20);
+        IntegerSequence as = new ArraySequence(nr);
+    
+        System.out.println("ArraySequence(seq):");
+        while(as.hasNext()){
+            System.out.print(as.next()+", ");
+        }
+        System.out.println();
     }
 }
